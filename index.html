@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>Happy Birthday Card</title>
+    <title>Birthday Card</title>
 
     <link rel="stylesheet" href="style.css">
   </head>
@@ -12,26 +12,39 @@
     <div class="birthday-card">
       <!-- Inner -->
       <div class="cover-inner">
-          <img src="foto1.jpg" width="100%">
+        <img src="foto1.jpg" width="100%" alt="Inner birthday card image">
       </div>
-  
+
       <!-- Outer -->
       <div class="cover-outer">
-          <img src="foto3.jpg" width="100%">
+        <img src="foto3.jpg" width="100%" alt="Outer birthday card image">
       </div>
-  
+
       <!-- Text -->
       <div class="text">
-          <p class="title">
-              Happy Birthday! <br> Mia
-          </p>
-          <p>
-              Hope your special day is as incridible as you are! and will bring you lots of happiness,
-              love, and fun.
-              You deserve them a lot. Enjoy!
-          </p>
-          <p>Hope your day goes great!</p>
+        <h1 class="title">
+          Happy Birthday! <br> Mia
+        </h1>
+        <p>
+          Hope your special day is as <strong>incredible</strong> as you are!<br>
+          May it bring you lots of happiness, love, and fun. <br>
+          You deserve them all. Enjoy!
+        </p>
+        <p>Hope your day goes great!</p>
       </div>
-  </div>
+    </div>
+
+    <!-- Musik otomatis -->
+    <audio id="lagu" autoplay loop>
+      <source src="lagu.mp3" type="audio/mp3">
+      Your browser does not support the audio element.
+    </audio>
+
+    <!-- Tombol manual jika autoplay diblokir -->
+    <div class="music-button-container">
+      <button class="music-button" onclick="document.getElementById('lagu').play()">
+        🎵 Putar Musik
+      </button>
+</div>
   </body>
 </html>
